@@ -166,3 +166,16 @@ nav a {
     }
 
 }
+
+.nav-div ul li {
+    list-style: none;
+}
+.index-nav{
+    display: flex;
+    justify-content: center;
+}
+ul {
+    display: flex;
+    
+    gap: 15px;
+}
