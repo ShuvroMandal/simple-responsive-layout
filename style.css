@@ -1,0 +1,168 @@
+.container {
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column-reverse;
+    /*
+    justify-content: center;
+    align-items: center;*/
+    height: 200px;
+
+}
+
+.box {
+    border: 2px dashed rgb(185, 24, 105);
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    padding: 15px;
+}
+
+/* form*/
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.login-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(221, 98, 98);
+    height: 90vh;
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    /*border: 2px solid slateblue;*/
+
+}
+
+.login-form input {
+    margin-top: 15px;
+}
+
+/* grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    row-gap: 40px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.item {
+    border: 1px solid aqua;
+    color: blue;
+}
+
+/*calender*/
+.calender-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 30px repeat(5, 50px);
+    row-gap: 20px;
+    column-gap: 10px;
+
+
+}
+
+
+.date,
+.day {
+    background-color: aquamarine;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: rgb(7, 67, 85);
+
+
+}
+
+.day {
+    background-color: burlywood;
+    font-size: 1em;
+}
+
+.month-heading {
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgb(104, 61, 145);
+    font-size: 2.5em;
+    color: brown;
+
+}
+
+/* media*/
+
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 15px;
+    column-gap: 20px;
+    margin-top: 20px;
+
+
+
+}
+
+.food {
+    border: 1px solid rgb(46, 46, 126);
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.food img {
+    width: 100%;
+    height: 300px;
+}
+
+@media screen and (max-width: 576px) {
+    .food-container {
+        grid-template-columns: repeat(2, 1fr);
+        background-color: aqua;
+    }
+
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .food-container {
+        grid-template-columns: repeat(3, 1fr);
+        background-color: rgb(169, 56, 184);
+    }
+}
+
+.responsive {
+    border: 1px solid blue;
+    max-width: 1140px;
+    margin: 5px auto;
+}
+
+.responsive-imagge-container {
+    display: flex;
+
+}
+
+.image-responsive img {
+    width: 100%;
+}
+
+@media screen and (max-width:576px) {
+    .responsive-imagge-container {
+        flex-direction: column-reverse;
+    }
+
+}
